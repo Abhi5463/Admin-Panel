@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="superAdminHome.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>sidebar and content</title>
+</head>
+<body>
+    <div class="sidebar">
+
+        <div class="logo__container">
+            <div class="logo">
+               <img alt='logo' src="./img/bxl-html5.svg">
+            </div>
+
+            <div class="logo__btn">
+              <img class="menu__btn" alt='menu' src="./img/bx-menu.svg">
+            </div>
+        </div>
+
+        <ul class="nav__list">
+          <li>
+            <a href="superAdminHome.html">
+              <img alt="home" src="./img/bx-home.svg" /><span class="link__name"
+                >Home</span
+              ></a
+            >
+            <span class="tooltip">Home</span>
+          </li>
+          <li>
+            <a href="sidebarReports.html">
+              <img alt="reports" src="./img/bxs-report.svg" /><span
+                class="link__name"
+                >Reports & Assessments</span
+              ></a
+            ><span class="tooltip">Reports</span>
+          </li>
+          <li>
+            <a href="sidebarLibrary.html">
+              <img alt="lib" src="./img/bx-library.svg" /><span class="link__name"
+                >Library</span
+              ></a
+            ><span class="tooltip">Library</span>
+          </li>
+          <li>
+            <a href="#">
+              <img alt="entrepreneurs" src="./img/bx-male-female.svg" /><span
+                class="link__name"
+                >Entrepreneurs</span
+              ></a
+            ><span class="tooltip">Entrepreneurs</span>
+          </li>
+          <li>
+            <a href="members.html">
+              <img alt="Members" src="./img/bxs-face.svg" /><span
+                class="link__name"
+                >Members</span
+              ></a
+            ><span class="tooltip">Members</span>
+          </li>
+          <li>
+            <a href="#">
+              <img alt="collaborators" src="./img/bx-user-plus.svg" /><span
+                class="link__name"
+                >Collaborators/Mentors</span
+              ></a
+            ><span class="tooltip">Collaborators</span>
+          </li>
+          <li>
+            <a href="#">
+              <img alt="list" src="./img/bx-chalkboard.svg" /><span
+                class="link__name"
+                >List of Institution</span
+              ></a
+            ><span class="tooltip">List of Institution</span>
+          </li>
+          <li>
+            <a href="#">
+              <img alt="teams" src="./img/bxs-group.svg" /><span
+                class="link__name"
+                >Teams</span
+              ></a
+            ><span class="tooltip">Teams</span>
+          </li>
+        </ul>
+    </div>
+    <div class="contents">
+
+      <nav class="nav">
+        <span>LOGO</span>
+        <img class="logOut-btn" src="./assets/logOut.svg"/>
+      </nav>
+
+
+        <div>
+            <div class="container">
+                <div class="container__row">
+                  <ul class="container__column">
+                    <div class="coloum_content">Notification</div>
+                    <li>1. word word word and a lot of words</li>
+                    <li>2. word word word and a lot of words</li>
+                    <li>3. word word word and a lot of words</li>
+                    <li>4. word word word and a lot of words</li>
+                    <li>5. word word word and a lot of words</li>
+                    <li class="column_content__link"><a href="#">read more...</a></li>
+                  </ul>
+              
+                
+                  <ul class="container__column">
+                    <div class="coloum_content">List of Items</div>
+                    <li>1. word word word and a lot of words</li>
+                    <li>2. word word word and a lot of words</li>
+                    <li>3. word word word and a lot of words</li>
+                    <li>4. word word word and a lot of words</li>
+                    <li>5. word word word and a lot of words</li>
+                    <li class="column_content__link"><a href="#">read more...</a></li>
+                  </ul>
+                </div>
+              
+                <div class="container__row">
+                  <ul class="container__column">
+                    <div class="coloum_content">Mentor Assement</div>
+                    <li>1. word word word and a lot of words</li>
+                    <li>2. word word word and a lot of words</li>
+                    <li>3. word word word and a lot of words</li>
+                    <li>4. word word word and a lot of words</li>
+                    <li>5. word word word and a lot of words</li>
+                    <li class="column_content__link"><a href="#">read more...</a></li>
+                  </ul>
+              
+                  <ul class="container__column">
+                    <div class="coloum_content">Term Status</div>
+                    <li>1. word word word and a lot of words</li>
+                    <li>2. word word word and a lot of words</li>
+                    <li>3. word word word and a lot of words</li>
+                    <li>4. word word word and a lot of words</li>
+                    <li>5. word word word and a lot of words</li>
+                    <li class="column_content__link"><a href="#">read more...</a></li>
+                </ul>
+                </div>
+              </div>
+              
+            </div>
+
+
+    <div>
+    
+        <script>
+            let btn = document.querySelector(".menu__btn");
+            let sidebar = document.querySelector(".sidebar");
+            let content = document.querySelector(".contents");
+
+            btn.onclick = function(){
+               sidebar.classList.toggle("active");
+               content.classList.toggle("active");
+            }
+
+        </script>
+
+
+</body>
+</html>
