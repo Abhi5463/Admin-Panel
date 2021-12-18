@@ -21,9 +21,9 @@
     margin-left: 78px;
     transition: all 0.5s ease;
   }
-  .contents.active {
+  /* .contents.active {
     margin-left: 300px;
-  }
+  } */
   
   .sidebar {
     position: fixed;
@@ -32,7 +32,7 @@
     height: 100%;
     width: 78px;
     background-color: #f5a425;
-    background-color: rgba(22, 34, 57, 0.97);
+    background-color: rgba(22, 34, 57, 1);
     padding: 3px 3px;
     /* border: 2px solid red; */
     display: flex;
@@ -43,49 +43,67 @@
   }
   
   .sidebar.active {
-    width: 300px;
+    width: 250px;
   }
   
-  .sidebar .logo__container .logo {
+  /* .sidebar .logo__container .logo {
     display: flex;
     height: 50px;
     width: 100%;
     align-items: center;
     opacity: 0;
     pointer-events: none;
-  }
+  } */
   
-  .sidebar.active .logo__container .logo {
+  /* .sidebar.active .logo__container .logo {
     opacity: 1;
     pointer-events: none;
-  }
+    border: 1px solid rgb(233, 61, 61);
+  } */
   
-  .sidebar .logo__container .logo img {
+  
+  /* .sidebar .logo__container .logo img {
     margin-right: 5px;
     height: 50px;
     width: 50px;
     position: absolute;
     left: 5%;
     top: 6px;
-  }
+    border: 1px solid rgb(233, 61, 61);
+  } */
   
-  .sidebar .menu__btn {
+  .sidebar .logo__container{
+    display: flex;
+    /* border: 1px solid rgb(233, 61, 61); */
+    width: 95%;
+    /* height: 50%; */
+    justify-content: flex-start;
+  }
+
+  .sidebar .menu__btn{
+    height: 35px;
+    min-width: 50px;
+    line-height: 50px;
+    text-align: center;
+  }
+   /* .sidebar .menu__btn {
     color: #fff;
     position: absolute;
     left: 50%;
-    top: 6px;
+    top: 6px; 
+     margin: auto;
     font-size: 20px;
-    height: 50px;
+    height: 30px;
     width: 50px;
     text-align: center;
     line-height: 30px;
     transform: translate(-50%);
-    /* border: 1px solid white; */
-  }
+    border: 1px solid white;
+  }  */
   
-  .sidebar.active .menu__btn {
+  /* .sidebar.active .menu__btn {
     left: 90%;
-  }
+  } */
   
   .nav__list {
     width: 100%;
@@ -163,7 +181,7 @@ margin: 1rem;
     display: flex;
     flex-direction: column;
     /* box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; */
-    box-shadow: 1px 2px 10px #6e4707;
+    box-shadow: 1px 2px 10px #1d1509;
     margin: 4rem;
     /* height:15rem; */
     width:70%;
@@ -175,7 +193,8 @@ margin: 1rem;
    padding:1rem;
    color:white;
    font-size: x-large;
-   background-color:#f5a425;
+   /* background-color:#f5a425; */
+   background-color: rgba(22, 34, 57, 1);
 }
 li{
     margin:0.4rem;

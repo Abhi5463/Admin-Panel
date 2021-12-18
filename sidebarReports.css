@@ -22,9 +22,9 @@ html{
     margin-left: 78px;
     transition: all 0.5s ease;
   }
-  .contents.active {
+  /* .contents.active {
     margin-left: 300px;
-  }
+  } */
   
   .sidebar {
     position: fixed;
@@ -33,17 +33,18 @@ html{
     height: 100%;
     width: 78px;
     background-color: #f5a425;
-    background-color: rgba(22, 34, 57, 0.97);
+    background-color: rgba(22, 34, 57, 1);
     padding: 3px 3px;
     /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: all 0.5s ease;
+    z-index:1000;
   }
   
   .sidebar.active {
-    width: 300px;
+    width: 250px;
   }
   
   .sidebar .logo__container .logo {
